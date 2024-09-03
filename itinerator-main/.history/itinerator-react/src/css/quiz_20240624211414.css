@@ -1,0 +1,67 @@
+.question {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the questions */
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center; /* Center the question text */
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the options horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+@media (max-width: 600px) {
+  .options {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center; /* Center buttons horizontally */
+  }
+}
+
+.button,
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: auto; /* Allow the width to adjust based on content */
+  max-width: 100%; /* Ensure buttons don't exceed container width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: none;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.text-input {
+  width: 100%; /* Make the input box take the full width of its container */
+  padding: 10px; /* Add padding inside the text box */
+  margin: 10px 0; /* Add some margin around the text box */
+  font-size: 16px; /* Increase the font size for better readability */
+  border: 1px solid #ccc; /* Define a border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a cleaner look */
+  background-color: #f9f9f9; /* Light background color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}
+
+.text-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); /* Slightly larger shadow on focus */
+  outline: none; /* Remove default outline */
+}

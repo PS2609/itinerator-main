@@ -1,0 +1,80 @@
+/* Ensure containers scale and adapt */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+  color: #20434d;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Limit maximum width for content */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%; /* Adjust as needed */
+  padding: 80px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Adjust margins and widths for smaller screens */
+@media (max-width: 991px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .button {
+    padding: 12px 24px; /* Example adjustment */
+  }
+}
+
+/* Limit width and adjust font sizes */
+.title {
+  flex-grow: 1;
+  margin: auto 0;
+  font-family: Rubik, sans-serif;
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+/* Ensure text wraps and doesn't overflow */
+.description {
+  margin-top: 26px;
+  color: #5c7b81;
+  font: 400 12px/138.5% Rubik, sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  letter-spacing: 0.96px;
+  word-wrap: break-word; /* Ensure long words wrap */
+}
+
+/* Adjust button sizes and ensure they fit */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+@media (max-width: 991px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .button {
+    padding: 12px 24px; /* Example adjustment */
+  }
+}

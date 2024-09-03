@@ -1,0 +1,79 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.results-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b8d1d2;
+  text-align: center;
+  color: #20434d;
+}
+
+.results-header {
+  margin-bottom: 20px;
+}
+
+.results-header h1 {
+  font: 42px/126% "Rubik", sans-serif;
+  color: #70999a;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b8d1d2;
+}
+
+.status {
+  background-color: #e9f7ef;
+  color: #155724;
+  padding: 15px;
+  border: 1px solid #b8d1d2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.itinerary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #b8d1d2;
+  border-radius: 10px;
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.itinerary h2 {
+  color: #20434d;
+  border-bottom: 2px solid #20434d;
+  padding-bottom: 5px;
+}
+
+.itinerary p,
+.itinerary ul,
+.itinerary ol {
+  margin: 10px 0;
+}
+
+.itinerary pre {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #007bff;
+}

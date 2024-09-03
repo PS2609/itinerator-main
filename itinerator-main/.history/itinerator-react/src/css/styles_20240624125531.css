@@ -1,0 +1,168 @@
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure it fills the full viewport height */
+  margin: 0 auto;
+  padding: 0 20px; /* Add some padding to the sides */
+  background-color: #fff;
+  color: #20434d;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+/* Content Wrapper Styles */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 20px; /* Adjusted padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+}
+
+/* Content Styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* Allow content to stretch */
+  margin: 29px 0;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+@media (max-width: 991px) {
+  .content {
+    margin-bottom: 40px;
+  }
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .header {
+    white-space: normal;
+  }
+}
+
+/* Logo Styles */
+.logo {
+  width: 57px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove the underline */
+  flex-grow: 1;
+  margin: auto 0;
+  font-family: Rubik, sans-serif;
+  color: #5c7b81; /* Inherit the color from the parent */
+}
+
+.title-link:visited {
+  color: #5c7b81; /* Ensure the color remains the same after the link is visited */
+}
+
+/* Title Styles */
+.title {
+  flex-grow: 1;
+  margin: auto 0;
+  font-family: Rubik, sans-serif;
+}
+
+/* Subtitle Styles */
+.subtitle {
+  align-self: stretch;
+  margin-top: 40px; /* Adjusted margin */
+  font: 42px/126% Rubik, sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+@media (max-width: 991px) {
+  .subtitle {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+}
+
+/* Description Styles */
+.description {
+  margin-top: 26px;
+  color: #5c7b81;
+  font: 400 12px/138.5% Rubik, sans-serif;
+  font-variant-numeric: lining-nums proportional-nums;
+  letter-spacing: 0.96px;
+}
+
+/* Buttons Styles */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+@media (max-width: 991px) {
+  .buttons {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Button Styles */
+.button,
+.submit-button {
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 10px;
+  font-family: Raleway, sans-serif;
+
+  background-color: #b8d1d2;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+@media (max-width: 991px) {
+  .button {
+    padding: 10px 20px;
+  }
+}
+
+.button.selected {
+  background-color: #70999a;
+  color: white;
+}
+
+/* Question Styles */
+.question {
+  margin-bottom: 40px;
+}

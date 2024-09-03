@@ -1,0 +1,221 @@
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+  color: #20434d;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Content Wrapper Styles */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+}
+
+/* Content Styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 29px 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .content {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    white-space: normal;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+/* Logo Styles */
+.logo {
+  width: 57px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
+
+/* Title Link Styles */
+.title-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: auto 0;
+  font-family: Rubik, sans-serif;
+  color: #5c7b81;
+}
+
+.title-link:visited {
+  color: #5c7b81;
+}
+
+/* Title Styles */
+.title {
+  margin: auto 0;
+  font-family: Rubik, sans-serif;
+}
+
+/* Subtitle Styles */
+.subtitle {
+  margin-top: 40px;
+  font: 32px/126% Rubik, sans-serif;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .subtitle {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+/* Description Styles */
+.description {
+  margin-top: 26px;
+  color: #5c7b81;
+  font: 400 12px/138.5% Rubik, sans-serif;
+  letter-spacing: 0.96px;
+}
+
+@media (max-width: 991px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .description {
+    font-size: 12px;
+  }
+}
+
+/* Buttons Container Styles */
+.buttons {
+  display: flex;
+  flex-direction: column; /* Always stack buttons vertically */
+  align-items: center;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+/* Button Styles */
+.button,
+.submit-button {
+  display: block; /* Make buttons block elements */
+  padding: 14px 28px;
+  margin: 10px 0; /* Add vertical margin for spacing */
+  font-family: Raleway, sans-serif;
+  color: #20434d;
+  background-color: #b8d1d2;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%; /* Make buttons full-width */
+  max-width: 300px; /* Optional: set a max-width for better appearance */
+}
+
+.button.selected {
+  background-color: #70999a;
+  color: white;
+}
+
+/* Question Styles */
+.question {
+  margin-bottom: 40px;
+}
+/* Auth Buttons Styles */
+.auth-buttons {
+  display: flex;
+  gap: 10px; /* Increased gap between buttons */
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.auth-buttons .button {
+  color: #fff;
+  background-color: #70999a;
+  padding: 10px 20px; /* Increased padding for larger buttons */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700; /* Set font weight */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px; /* Added margin for additional spacing */
+}
+
+.auth-buttons .button:hover {
+  background-color: #b8d1d2;
+  color: #333;
+  transform: translateY(-2px);
+}

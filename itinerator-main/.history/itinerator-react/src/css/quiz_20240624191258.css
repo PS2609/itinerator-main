@@ -1,0 +1,52 @@
+.question {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+.button,
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make buttons full-width */
+  max-width: 300px; /* Optional: Set a max-width for better appearance */
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.text-input {
+  width: 100%; /* Make the input box take the full width of its container */
+  padding: 10px; /* Add padding inside the text box */
+  margin: 10px 0; /* Add some margin around the text box */
+  font-size: 16px; /* Increase the font size for better readability */
+  border: 1px solid #ccc; /* Define a border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a cleaner look */
+  background-color: #f9f9f9; /* Light background color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}
+
+.text-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); /* Slightly larger shadow on focus */
+  outline: none; /* Remove default outline */
+}

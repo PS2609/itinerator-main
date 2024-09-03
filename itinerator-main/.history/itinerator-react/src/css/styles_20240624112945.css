@@ -1,0 +1,137 @@
+.container {
+  justify-content: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #20434d;
+  font-weight: 700;
+  text-align: center;
+  width: 100%; /* Ensures the container takes full width */
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Centers the container horizontally */
+  
+}
+
+.content-wrapper {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.content {
+  display: flex;
+  width: 492px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 29px 0 286px;
+}
+
+@media (max-width: 991px) {
+  .content {
+    margin-bottom: 40px;
+  }
+}
+
+.header {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .header {
+    white-space: initial;
+  }
+}
+
+.logo {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 57px;
+}
+
+.title {
+  font-family: Rubik, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+.subtitle {
+  font-variant-numeric: lining-nums proportional-nums;
+  align-self: stretch;
+  margin-top: 240px;
+  font: 42px/126% Rubik, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .subtitle {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.description {
+  color: #5c7b81;
+  font-variant-numeric: lining-nums proportional-nums;
+  letter-spacing: 0.96px;
+  margin-top: 26px;
+  font: 400 12px/138.5% Rubik, sans-serif;
+}
+
+.buttons {
+  margin-top: 45px;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .buttons {
+    margin-top: 40px;
+  }
+}
+
+.button,
+.submit-button {
+  font-family: Raleway, sans-serif;
+  border-radius: 5px;
+  background-color: #b8d1d2;
+  padding: 20px 40px; /* Adjust padding to add space around each button */
+  text-decoration: none;
+  color: #20434d;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Add margin to create space around each button */
+  cursor: pointer; /* Add cursor: pointer to change cursor on hover */
+}
+
+@media (max-width: 991px) {
+  .button {
+    padding: 10px 20px;
+  }
+}
+
+.button.selected {
+  background-color: #70999a; /* Darker color when selected */
+  color: white;
+}
+
+.question {
+  margin-bottom: 40px; /* Adjust margin to add space between each question */
+}

@@ -1,0 +1,73 @@
+/* Improved styling for login container */
+.login-container {
+  max-width: 700px;
+  margin: 50px auto; /* Add some margin to push the container down */
+  padding: 100px; /* Increase padding for better spacing */
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Slightly more rounded corners */
+  background-color: #ffffff; /* Change background color to pure white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for more depth */
+}
+
+/* Styling for the heading */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px; /* Increase margin for more space */
+  color: #70999a; /* Main color for heading */
+}
+
+/* Styling for the form group */
+.login-form .form-group {
+  margin-bottom: 20px; /* Increase margin for better spacing */
+}
+
+/* Styling for the labels */
+.login-form label {
+  display: block;
+  margin-bottom: 8px; /* Increase margin for better spacing */
+  font-weight: bold; /* Make labels bold */
+  color: #555; /* Darker color for better readability */
+}
+
+/* Styling for the input fields */
+.login-form input {
+  width: 100%;
+  padding: 10px; /* Increase padding for better usability */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Slightly more rounded corners */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+}
+
+/* Focus state for input fields */
+.login-form input:focus {
+  border-color: #70999a; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(112, 153, 154, 0.2); /* Add shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Styling for the login button */
+.login-form button {
+  width: 100%;
+  padding: 12px; /* Increase padding for better usability */
+  background-color: #70999a; /* Main color for button */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Slightly more rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition effects */
+}
+
+/* Hover state for the login button */
+.login-form button:hover {
+  background-color: #b8d1d2; /* Lighter main color on hover */
+  transform: translateY(-2px); /* Add slight upward movement */
+}
+
+/* Error message styling */
+.error {
+  color: #d9534f; /* Bootstrap error color */
+  text-align: center;
+  margin-bottom: 20px; /* Increase margin for better spacing */
+  font-weight: bold; /* Make error message bold */
+}
