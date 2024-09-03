@@ -49,6 +49,21 @@ Experience seamless travel planning with our AI-powered itinerary generator, bui
 
 ## Tech Stack 
 
+**Frontend**:
+
+React: A popular JavaScript library for building user interfaces.
+CSS: Cascading Style Sheets for styling the UI elements.
+
+**Backend**:
+
+Node.js: A JavaScript runtime environment for server-side development.
+Firebase: A backend-as-a-service platform providing database, authentication, hosting, and more.
+Redis: Used redis for rate limiting of creating trips.
+
+Gemini AI Model: Generates user-personalized itineraries based on user preferences and data.
+
+Google Maps API: Provides mapping functionalities, including directions and location information.
+
 
 
 ## License
