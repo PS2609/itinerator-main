@@ -1,4 +1,4 @@
-# itinerator
+# Itinerator
 ## AI-Powered Itinerary Generator
 
 Experience seamless travel planning with our AI-powered itinerary generator, built using React, Firebase, and Gemini's API . Effortlessly create personalized travel itineraries tailored to your preferences and enjoy a smarter way to plan your next adventure.
